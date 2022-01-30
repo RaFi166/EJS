@@ -14,7 +14,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded())
 
 //db
-const db = 'mongodb+srv://ninja-express:S8GQw0afScEe6MrL@cluster0.opetx.mongodb.net/blog?retryWrites=true&w=majority'
+const db = 'mongodb+srv://express:S8GQw0a6MrL@cluster0.opetx.mongodb.net/blog?retryWrites=true&w=majority'
 mongoose.connect(db)
     .then((result) => {
         console.log("connected");
@@ -23,7 +23,7 @@ mongoose.connect(db)
         console.log("not connected yet");
     })
 //db
-// S8GQw0afScEe6MrL ninja-express
+// S8GQw0afScEe6MrL 
 
 //first Middleware 
 app.use((req, res, next) => {
